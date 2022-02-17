@@ -15,14 +15,15 @@ const gbPlusBtn = document.querySelector('#add-gb')
 const ccPlusBtn = document.querySelector('#add-cc')
 const sugarPlusBtn = document.querySelector('#add-sugar')
 
-const gbMinus = document.querySelector('#minus-gb')
-const ccMinus = document.querySelector('#Minus-cc')
-const sugarMinus = document.querySelector('#Minus-sugar')
+const gbMinusBtn = document.querySelector('#minus-gb')
+const ccMinusBtn = document.querySelector('#minus-cc')
+const sugarMinusBtn = document.querySelector('#minus-sugar')
 
 const gbNum = document.querySelector('#qty-gb')
 const ccNum = document.querySelector('#qty-cc')
 const sugarNum = document.querySelector('#qty-sugar')
 
+const total = document.querySelector('#qty-total')
 
 gbPlusBtn.addEventListener('click', function(){
     gb = gb +1
@@ -46,14 +47,14 @@ sugarPlusBtn.addEventListener('click', function(){
 total.textContent = (gb + cc + sugar);
 })
 
-gbMinus.addEventListener('click', function(){
+gbMinusBtn.addEventListener('click', function(){
     gb = gb -1
     console.log('gbcount')
     gbNum.textContent = gb
     total.textContent = (gb + cc + sugar);
 })
 
-ccMinus.addEventListener('click', function(){
+ccMinusBtn.addEventListener('click', function(){
     cc = cc -1
     console.log('cccount')
     ccNum.textContent = cc
@@ -61,7 +62,7 @@ total.textContent = (gb + cc + sugar);
 })
 
 
-sugarMinus.addEventListener('click', function(){
+sugarMinusBtn.addEventListener('click', function(){
     sugar = sugar -1
     console.log('sugarcount')
     sugarNum.textContent = sugar
