@@ -1,7 +1,7 @@
 // HINT: You can delete this console.log after you no longer need it!
 console.log('JavaScript code has loaded!')
 // First, tell us your name
-let yourName = "Darryl Young" // HINT: Replace this with your own name!
+let yourName = "Darryl Young" 
 
 credit.textContent = `Created by ${yourName}`
 
@@ -24,14 +24,14 @@ gbPlusBtn.addEventListener('click', function(){
     gb = gb +1
     console.log('gbcount')
     gbNum.textContent = gb
-credit.textContent = gb + cc + sugar
+total.textContent = gb + cc + sugar
 })
 
 ccPlusBtn.addEventListener('click', function(){
     cc = cc +1
     console.log('cccount')
     ccNum.textContent = cc
-credit.textContent = gb + cc + sugar
+total.textContent = gb + cc + sugar
 })
 
 
@@ -39,21 +39,21 @@ sugarPlusBtn.addEventListener('click', function(){
     sugar = sugar +1
     console.log('sugarcount')
     sugarNum.textContent = sugar
-credit.textContent = gb + cc + sugar
+total.textContent = gb + cc + sugar
 })
 
 gbNum.addEventListener('click', function(){
     gb = gb -1
     console.log('gbcount')
     gbNum.textContent = gb
-    credit.textContent = gb + cc + sugar
+    total.textContent = gb + cc + sugar
 })
 
 ccNum.addEventListener('click', function(){
     cc = cc -1
     console.log('cccount')
     ccNum.textContent = cc
-credit.textContent = gb + cc + sugar
+total.textContent = gb + cc + sugar
 })
 
 
@@ -61,7 +61,7 @@ sugarNum.addEventListener('click', function(){
     sugar = sugar -1
     console.log('sugarcount')
     sugarNum.textContent = sugar
-credit.textContent = gb + cc + sugar
+total.textContent = gb + cc + sugar
 console.log('countminus')
 })
 
