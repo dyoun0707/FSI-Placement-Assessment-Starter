@@ -10,28 +10,32 @@ let gb = 0 // Gingerbread
 let cc = 0 // Chocolate Chip
 let sugar = 0 // Sugar Sprinkle
 
+
 const gbPlusBtn = document.querySelector('#add-gb')
 const ccPlusBtn = document.querySelector('#add-cc')
 const sugarPlusBtn = document.querySelector('#add-sugar')
-console.log('Btn')
 
-const gbNum = document.querySelector('#minus-gb')
-const ccNum = document.querySelector('#minus-cc')
-const sugarNum = document.querySelector('#minus-sugar')
-console.log('Num')
+const gbMinus = document.querySelector('#minus-gb')
+const ccMinus = document.querySelector('#Minus-cc')
+const sugarMinus = document.querySelector('#Minus-sugar')
+
+const gbNum = document.querySelector('#qty-gb')
+const ccNum = document.querySelector('#qty-cc')
+const sugarNum = document.querySelector('#qty-sugar')
+
 
 gbPlusBtn.addEventListener('click', function(){
     gb = gb +1
     console.log('gbcount')
     gbNum.textContent = gb
-total.textContent = gb + cc + sugar
+total.textContent = (gb + cc + sugar);
 })
 
 ccPlusBtn.addEventListener('click', function(){
     cc = cc +1
     console.log('cccount')
     ccNum.textContent = cc
-total.textContent = gb + cc + sugar
+total.textContent = (gb + cc + sugar);
 })
 
 
@@ -39,29 +43,29 @@ sugarPlusBtn.addEventListener('click', function(){
     sugar = sugar +1
     console.log('sugarcount')
     sugarNum.textContent = sugar
-total.textContent = gb + cc + sugar
+total.textContent = (gb + cc + sugar);
 })
 
-gbNum.addEventListener('click', function(){
+gbMinus.addEventListener('click', function(){
     gb = gb -1
     console.log('gbcount')
     gbNum.textContent = gb
-    total.textContent = gb + cc + sugar
+    total.textContent = (gb + cc + sugar);
 })
 
-ccNum.addEventListener('click', function(){
+ccMinus.addEventListener('click', function(){
     cc = cc -1
     console.log('cccount')
     ccNum.textContent = cc
-total.textContent = gb + cc + sugar
+total.textContent = (gb + cc + sugar);
 })
 
 
-sugarNum.addEventListener('click', function(){
+sugarMinus.addEventListener('click', function(){
     sugar = sugar -1
     console.log('sugarcount')
     sugarNum.textContent = sugar
-total.textContent = gb + cc + sugar
+total.textContent = (gb + cc + sugar);
 console.log('countminus')
 })
 
